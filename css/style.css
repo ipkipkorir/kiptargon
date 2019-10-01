@@ -69,7 +69,7 @@ header #branding p {
 }
 
 header #branding img {
-	height: 70px;
+	/*height: 70px;*/
 	width: 70px;
 	margin: 0 0 10px 0;
 }
@@ -138,21 +138,21 @@ header #branding p {
 }
 #boxes .container {
 	background: #fff;
-	min-height: 450px;
+	min-height: 550px;
 	margin-top: 15px;
 	margin-bottom: 0;
 }
 
 #boxes .box {
 	width: 30%;
-	margin: 70px 16px;
-	min-height: 400px;
+	margin: 50px 16px;
+	min-height: 280px;
 	/*box-shadow: 1px 1px 1px 1px #111;*/
 	float: left;
 	background: #fff;
 }
 
-.box h1, .box p {
+.box h1, .box p, .box ul {
 	margin: 0 auto;
 	padding: 16px 20px;
 	text-align: left;
