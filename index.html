@@ -24,13 +24,13 @@
 	</header>
 	<section id="navigation">
 		<nav>
-			<div class="topnav" id="myTopnav">
+			<div class="topnav" id="topnav_1">
 				<a href="#" class="active">Home</a>
 				<a href="#">About</a>
 				<a href="#">Admission</a>
 				<div class="dropdown">
 					<button class="dropbtn">Academic
-						<i class="fa fa-caret-down"></i>
+						<i class="dropdown-symbol"></i>
 					</button>
 					<div class="dropdown-content">
 						<a href="#">Engineering</a>
@@ -46,7 +46,7 @@
 				<div class="search-container">
 					<form action="index.html">
 						<input type="text" name="search" placeholder="search ...">
-						<button type="submit"><i class="fa fa-search"></i> </button> 
+						<button type="submit"><i class="search-field"></i> </button> 
 					</form>
 				</div> 
 				-->
@@ -97,7 +97,7 @@ slideshow for images and transparent texts
 	<section id="index-slides" >
 		<div class="slideshow-container">
 			<h1 style="text-align: center">What we do</h1>
-			<div class="mySlides fade">
+			<div class="slide fade">
 
 			  	<div class="numbertext">1 / 4</div>
 				  	<img src="./img/imgSlides/img_slide1.jpg" style="width:100%">
@@ -110,7 +110,7 @@ slideshow for images and transparent texts
 				</div>
 			</div>
 
-			<div class="mySlides fade">
+			<div class="slide fade">
 			  	<div class="numbertext">2 / 4</div>
 			  	<img src="./img/imgSlides/img_slide2.jpg" style="width:100%">
 			  	<div class="text">
@@ -122,7 +122,7 @@ slideshow for images and transparent texts
 			  	</div>
 			</div>
 
-			<div class="mySlides fade">
+			<div class="slide fade">
 			  	<div class="numbertext">3 / 4</div>
 			  	<img src="./img/imgSlides/img_slide3.jpg" style="width:100%">
 			  	<div class="text">
@@ -134,7 +134,7 @@ slideshow for images and transparent texts
 				</div>
 			</div>
 
-			<div class="mySlides fade">
+			<div class="slide fade">
 			  	<div class="numbertext">4 / 4</div>
 			  	<img src="./img/imgSlides/img_slide4.jpg" style="width:100%">
 			  	<div class="text">
@@ -191,7 +191,7 @@ slideshow for images and transparent texts
 Javascript code for dropdown menu
 */
 function myFunction() {
-  var x = document.getElementById("myTopnav");
+  var x = document.getElementById("topnav_1");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
@@ -216,7 +216,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("slide");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
