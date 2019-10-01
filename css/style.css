@@ -1,0 +1,226 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+	background: url('../img/bg.png') repeat;
+	line-height: 1.5;
+}
+
+/* GLOBAL */
+* {box-sizing: border-box;}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+/*Header content has 65% width*/
+header .container {
+	width: 75%;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* HEADER */
+header {
+	background: #ffffff;
+	color: #000000;
+	padding-top: 30px;
+	min-height: 70px;
+}
+
+
+/*
+Move the branding div to the left
+*/
+
+header #branding {
+	position: top;
+	display: inline;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	
+}
+
+header #branding img {
+	float: left;
+}
+
+header #branding [slogan] {
+	float: right;
+	
+}
+
+header #branding h1 {
+	text-shadow: 2px 2px #111111;
+	color: #646499;
+}
+
+header #branding p {
+	font-size: 24px;
+	font-weight: 600;
+	text-shadow: 2px 2px #111111;
+	color: #cccccc;
+}
+
+header #branding img {
+	height: 70px;
+	width: 70px;
+	margin: 0 0 10px 0;
+}
+
+header #branding h1 {
+	margin: auto;
+	padding: 0 30px 0 30px;
+	text-align: center;
+	float: right;
+}
+
+header #branding p {
+	text-align: center;
+	margin: 0;
+	padding-bottom: 10px; 
+}
+
+/*
+*******SEARCH BUTTON*****
+*************************
+- Align to the right of the topnav bar
+*/
+
+/* 
+*******SHOWCASE*********
+************************
+- Backgound has image:
+		- covers full width
+		- no repeat
+- Align text to center
+- Specified minimum height
+- Image has transparent text(using color opacity)
+*/
+#showcase {
+	width: 100%;
+	text-align: center;
+	background: url('../img/slide-5.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 360px;
+	color: #111;
+	position: relative;
+	font-size: 150%;
+
+}
+#showcase h3 {
+	line-height: 1.5; 
+	text-shadow: 2px 2px #111;
+}
+
+#showcase .container {
+	position: absolute;
+  	bottom: 0;
+  	top: 0;
+  	background: rgb(0, 0, 0); /* Fallback color */
+  	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  	color: #f1f1f1;
+  	width: 100%;
+  	padding: 20px;
+}
+
+
+/*Boxes for displaying vision, mission and motto */
+#boxes {
+	margin: 0 auto;
+}
+#boxes .container {
+	background: #fff;
+	min-height: 450px;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+#boxes .box {
+	width: 30%;
+	margin: 70px 16px;
+	min-height: 400px;
+	/*box-shadow: 1px 1px 1px 1px #111;*/
+	float: left;
+	background: #fff;
+}
+
+.box h1, .box p {
+	margin: 0 auto;
+	padding: 16px 20px;
+	text-align: left;
+
+}
+/*
+*****IMAGE SLIDES ******
+**************************
+*/
+#index-slides {
+}
+
+#index-slides .slideshow-container {
+	margin: 0 auto;
+}
+
+#index-slides .slideshow-container h1 {
+}
+
+/*
+*****BOTTOM & FOOTER******
+**************************
+*/
+#bottom, footer {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 18px;
+}
+
+#bottom {
+	min-height: 300px;
+	background: #ddd;
+}
+
+footer {
+	min-height: 250px;
+	background: #ccc;
+}
+
+#bottom .socialmedia {
+	padding: 15px;
+}
+
+#bottom img {
+	width: 50px;
+}
+
+#bottom img:hover {
+	width: 55px;
+}
+/*
+******MAKE DESIGN RESPONSIVE*********
+*************************************
+*/
+@media screen and (max-width: 600px) {
+  header #branding img, header #branding [slogan], #boxes .box {
+    float: none;
+    display: block;
+    margin: auto;
+
+  }
+
+ #showcase {
+ 	width: 100%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	height: calc(100vh - 120px);
+  }
+}
