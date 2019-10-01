@@ -3,10 +3,12 @@
 <html>
 <head>
 	<title>Kiptaragon TVC</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+    <meta name="description" content="Technical and vocational institution offering skill development for self reliance, Nakuru County, Kenya">
+    <meta name="keywords" content="technical, vocational, tvet, nakuru, central rift, kiptaragon, college, excellent, kenya">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/topnav.css">
-	<link rel="stylesheet" type="text/css" href="css/slideshow.css">
-	<meta charset="utf-8">
 
 </head>
 <body>
@@ -64,22 +66,24 @@
 			</h3>
 		</div>
 	</section>
+
+<!-- 
+-------MISSION, VISION CORE VALUES AND MOTTO------
+--------------------------------------------------
+ -->	
 	<section id="boxes">
 		<div class="container">
 			<div mission class="box">
 				<h1>Our Mission</h1>
 				<p>
-					Design and built your future with us - enroll today
-					for craft certificate, certificate or diploma course 
-					we guarantee skills that will make you self reliant
+					To promote and impart vocational and technical competencies and entrepreneurial 
+					skills for socio-economic self reliance
 				</p>
 			</div>
 			<div vision class="box">
-				<h1>Vision</h1>
+				<h1>Our Vision</h1>
 				<p>
-					Design and built your future with us - enroll today
-					for craft certificate, certificate or diploma course 
-					we guarantee skills that will make you self reliant
+					To be a center of excellence in Technical and Vocational Education and Training (TVET)
 				</p>
 			</div>
 			<div motto class="box">
@@ -95,69 +99,7 @@
 slideshow for images and transparent texts
 -->
 	<section id="index-slides" >
-		<div class="slideshow-container">
-			<h1 style="text-align: center">What we do</h1>
-			<div class="slide fade">
 
-			  	<div class="numbertext">1 / 4</div>
-				  	<img src="./img/imgSlides/img_slide1.jpg" style="width:100%">
-				<div class="text">
-					<p>
-					  	Design and built your future with us - enroll today
-						for craft certificate, certificate or diploma course 
-						we guarantee skills that will make you self reliant
-					</p>
-				</div>
-			</div>
-
-			<div class="slide fade">
-			  	<div class="numbertext">2 / 4</div>
-			  	<img src="./img/imgSlides/img_slide2.jpg" style="width:100%">
-			  	<div class="text">
-			  		<p>
-			  			Design and built your future with us - enroll today
-						for craft certificate, certificate or diploma course 
-						we guarantee skills that will make you self reliant
-			  		</p>
-			  	</div>
-			</div>
-
-			<div class="slide fade">
-			  	<div class="numbertext">3 / 4</div>
-			  	<img src="./img/imgSlides/img_slide3.jpg" style="width:100%">
-			  	<div class="text">
-			  		<p>
-			  			Design and built your future with us - enroll today
-						for craft certificate, certificate or diploma course 
-						we guarantee skills that will make you self reliant
-			  		</p>
-				</div>
-			</div>
-
-			<div class="slide fade">
-			  	<div class="numbertext">4 / 4</div>
-			  	<img src="./img/imgSlides/img_slide4.jpg" style="width:100%">
-			  	<div class="text">
-			  		<p>
-			  			Design and built your future with us - enroll today
-						for craft certificate, certificate or diploma course 
-						we guarantee skills that will make you self reliant
-			  		</p>
-				</div>
-			</div>
-
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-		</div>
-			<br>
-
-		<div style="text-align:center">
-		  <span class="dot" onclick="currentSlide(1)"></span> 
-		  <span class="dot" onclick="currentSlide(2)"></span> 
-		  <span class="dot" onclick="currentSlide(3)"></span> 
-		  <span class="dot" onclick="currentSlide(4)"></span> 
-		</div>
 	</section>
 
 
@@ -197,37 +139,6 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
-}
-
-/*
-*******Javascript code for slides*******
-***********************************
-*/
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
 }
 
 </script>
