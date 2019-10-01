@@ -209,12 +209,17 @@ footer {
 *************************************
 */
 @media screen and (max-width: 600px) {
-  header #branding img, header #branding [slogan], #boxes .box {
-    float: none;
-    display: block;
-    margin: auto;
+	header #branding img, header #branding [slogan], #boxes .box {
+	    float: none;
+	    display: block;
+	    margin: auto;
+	}
 
-  }
+	#boxes .box p, #boxes .box h1 {
+		text-align: center;
+		margin: 0 auto;
+		padding: 6px 4px 8px;
+	}
 
  #showcase {
  	width: 100%;
