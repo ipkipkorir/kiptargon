@@ -1,8 +1,6 @@
 body {
-	margin: 0;
 	padding: 0;
 	font-size: 17px;
-	font-family: Arial, Helvetica, sans-serif;
 	background: url('../img/bg.png') repeat;
 	line-height: 1.5;
 }
@@ -159,19 +157,7 @@ header #branding p {
 	text-align: left;
 
 }
-/*
-*****IMAGE SLIDES ******
-**************************
-*/
-#index-slides {
-}
 
-#index-slides .slideshow-container {
-	margin: 0 auto;
-}
-
-#index-slides .slideshow-container h1 {
-}
 
 /*
 *****BOTTOM & FOOTER******
@@ -257,6 +243,6 @@ footer {
 	  	background-position: center;
 	  	background-repeat: no-repeat;
 	  	background-size: cover;
-	  	height: calc(100vh - 120px);
+	  	height: calc(100vh - 140px);
   }
 }
