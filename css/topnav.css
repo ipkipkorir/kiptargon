@@ -1,6 +1,6 @@
 body {
   margin:0;
-  font-family:Arial, Helvetika, Sans-serif;
+  font-family: Arial, Helvetika, Sans-serif;
 }
 
 nav {
@@ -22,7 +22,8 @@ nav {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .active {
@@ -40,7 +41,7 @@ nav {
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;    
+  font-size: 16px;    
   border: none;
   outline: none;
   color: white;
@@ -48,6 +49,7 @@ nav {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .dropdown-content {

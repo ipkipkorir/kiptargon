@@ -69,7 +69,7 @@ header #branding p {
 }
 
 header #branding img {
-	/*height: 70px;*/
+	height: 70px;
 	width: 70px;
 	margin: 0 0 10px 0;
 }
@@ -145,9 +145,10 @@ header #branding p {
 
 #boxes .box {
 	width: 30%;
-	margin: 50px 16px;
+	margin: 50px 10px;
 	min-height: 280px;
-	/*box-shadow: 1px 1px 1px 1px #111;*/
+	border-radius: 5px;
+	box-shadow: #ccc 4px 4px 4px 4px;
 	float: left;
 	background: #fff;
 }
@@ -209,10 +210,33 @@ footer {
 *************************************
 */
 @media screen and (max-width: 600px) {
-	header #branding img, header #branding [slogan], #boxes .box {
+	header #branding img, header #branding [slogan], #branding h1, #boxes .box {
 	    float: none;
 	    display: block;
-	    margin: auto;
+	    margin: 0 auto;
+	}
+
+	header #branding, #showcase {
+		line-height: 1.2;
+		font-size: 22px;
+		width: 100%;
+	}
+
+	header #branding h1 {
+		width: 100%;
+		margin: auto;
+		font-size: 35px;
+	}
+
+	#showcase h1 {
+		margin: 0 auto;
+		padding: 0 2px;
+		font-size: 25px;
+	}
+
+
+	#boxes .container {
+		background: none;
 	}
 
 	#boxes .box p, #boxes .box h1 {
@@ -221,11 +245,18 @@ footer {
 		padding: 6px 4px 8px;
 	}
 
- #showcase {
- 	width: 100%;
-  	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	height: calc(100vh - 120px);
+	#boxes .box {
+		margin: 20px auto;
+		width: 95%;
+		box-shadow: gray 2px 2px 2px 2px;
+		border-radius: 20px 20px 20px 20px;
+	}
+
+	#showcase {
+	 	width: 100%;
+	  	background-position: center;
+	  	background-repeat: no-repeat;
+	  	background-size: cover;
+	  	height: calc(100vh - 120px);
   }
 }
