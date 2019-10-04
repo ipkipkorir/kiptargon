@@ -195,7 +195,7 @@ footer {
 ******MAKE DESIGN RESPONSIVE*********
 *************************************
 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	header #branding img, header #branding [slogan], #branding h1, #boxes .box {
 	    float: none;
 	    display: block;
