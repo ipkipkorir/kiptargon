@@ -1,0 +1,173 @@
+/* GLOBAL*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 16px;
+	background: url('../img/bg.png');
+}
+
+header #branding [slogan] {
+	margin: 0 auto; 
+}
+
+nav {
+	width: 75%;
+	margin: 0 auto;
+	padding: 0;
+}
+nav a {
+	text-decoration: none;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+nav [contact-us] {
+	float: right;
+	padding: 10px;
+}
+
+nav [back-to-site] {
+	float: left;
+	padding: 10px;
+}
+
+
+/*HEADER*/
+header {
+	width: 100%;
+	background-color: #fff;
+	min-height: 60px;
+}
+#header-container {
+	width: 80%;
+	margin: auto;
+}
+
+header .logo {
+	float: left;
+	width: 25%;
+}
+
+header [slogan] {
+	font-size: 20px;
+}
+
+
+ /*NAVIGATION*/
+ #navigation {
+ 	width: 100%;
+ 	margin: 0;
+ 	padding: 0;
+ 	background-color: #FF9933;
+
+ }
+
+
+/*FORM TITLE*/
+.form-title {
+	width: 30%;
+	margin: 30px auto 0;
+	color: #ffffff;
+	background: #FF9933;
+	text-align: center;
+	border: 1px solid #b0c4de;
+	border-bottom: none;
+	border-radius: 10px 10px 0 0;
+	padding: 20px;
+}
+
+/* FORM */
+form {
+	width: 30%;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #b0c4de;
+	background: #ffffff;
+	border-radius: 0 0 10px 10px;
+}
+
+/* FORM ELEMENTS*/
+
+/* FORM: All div elements*/
+.input-group {
+	margin: 10px 0;
+}
+
+/*FORM: All labels within the div elements of the form*/
+.input-group label{
+	display: none;
+	/*
+	display: block;
+	text-align: left;
+	margin: 3px;
+	*/
+}
+
+/*FORM: All input elements within the the div elements of the form*/
+.input-group input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid #cccccc;
+}
+
+/*FORM: Button element within the form*/
+.btn {
+	padding: 10px;
+	font-size: 15px;
+	color: #ffffff;
+	background: #FF9933;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+form a {
+	text-decoration: none;
+}
+
+form a:hover {
+	color: #ffffff;
+	padding: 5px 15px;
+	border-radius: 5px;
+	background: #333;
+}
+
+/*
+******FOOTER*******
+*******************
+*/
+footer {
+	margin: 20px auto 0;
+	background: gray;
+	padding: 40px;
+	text-align: center;
+	min-height: 100px;
+}
+/*
+****RESPONSIVE DESIGN****
+*************************
+*/
+@media screen and (max-width: 768px) {
+	#navigation, form {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	#navigation nav a, .form-title, footer {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		display: block;
+	}
+}
