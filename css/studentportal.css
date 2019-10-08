@@ -125,7 +125,7 @@ form {
 	background: #FF9933;
 	border: none;
 	border-radius: 5px;
-	width: 100%;
+	width: 93%;
 }
 
 .btn:hover {
@@ -160,12 +160,21 @@ footer {
 *************************
 */
 @media screen and (max-width: 768px) {
-	#navigation, form {
+	#navigation {
 		margin-bottom: 20px;
 		width: 100%;
 	}
 
-	#navigation nav a, .form-title, footer {
+	form {
+		margin-bottom: 20px;
+		width: 97%;
+	}
+
+	.form-title {
+		width: 97%;
+	}
+
+	#navigation nav a, footer {
 		width: 100%;
 		display: block;
 		margin: 0 auto;
