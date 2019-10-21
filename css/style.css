@@ -157,6 +157,10 @@ header #branding p {
 
 }
 
+/*Contacts*/
+.contacts p span {
+	font-weight: bold;
+}
 
 /*
 *****BOTTOM & FOOTER******
