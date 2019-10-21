@@ -95,7 +95,13 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  .topnav.responsive {position: relative;}
+  /*Modify responsive nav to start from the left margin*/
+  #topnav_1 {
+    width: 100%;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
