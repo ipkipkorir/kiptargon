@@ -10,7 +10,7 @@ body {
 
 .container {
 	width: 80%;
-	margin: auto;
+	margin: 0 auto;
 	overflow: hidden;
 }
 
@@ -121,7 +121,7 @@ header #branding p {
 	position: absolute;
   	bottom: 0;
   	top: 0;
-  	background: rgb(0, 0, 0); /* Fallback color */
+  	background: rgb(0, 0, 0); 		/* Fallback color */
   	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   	color: #f1f1f1;
   	width: 100%;
@@ -136,18 +136,22 @@ header #branding p {
 #boxes .container {
 	background: #fff;
 	min-height: 550px;
-	margin-top: 15px;
+	margin-top: 8px;
 	margin-bottom: 0;
 }
 
 #boxes .box {
-	width: 30%;
-	margin: 50px 10px;
+	width: 45%;
+	margin: 50px 25px;
 	min-height: 280px;
 	border-radius: 5px;
 	box-shadow: #ccc 4px 4px 4px 4px;
 	float: left;
 	background: #fff;
+}
+
+#boxes [core-values] {
+	padding-left: 30px;
 }
 
 .box h1, .box p, .box ul {
