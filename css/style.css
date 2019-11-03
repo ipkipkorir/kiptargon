@@ -198,6 +198,12 @@ footer {
 #bottom img:hover {
 	width: 55px;
 }
+
+/*DOWNLOADS PAGE*/
+#download-content a{
+	text-decoration: unset;
+}
+
 /*
 ******MAKE DESIGN RESPONSIVE*********
 *************************************
