@@ -2,6 +2,9 @@
 	width: 60px;
 }
 
+[contacts] span {
+	font-weight: bold;
+}
 /*SEARCH within the website*/
 /*
 .search-container form {
