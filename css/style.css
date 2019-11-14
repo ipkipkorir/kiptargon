@@ -204,6 +204,18 @@ footer {
 	text-decoration: unset;
 }
 
+
+/*ABOUT PAGE*/
+[contacts] h1{
+	font-size: 16px;
+	color: #000087;
+}
+[contacts] p {
+	text-align: justify;
+	font-size: 15px;
+}
+
+
 /*
 ******MAKE DESIGN RESPONSIVE*********
 *************************************
@@ -238,17 +250,22 @@ footer {
 		background: none;
 	}
 
-	#boxes .box p, #boxes .box h1 {
+	#boxes .box h1 {
 		text-align: center;
+		color: #646499;
 		margin: 0 auto;
-		padding: 6px 4px 8px;
+		padding: 6px 8px 8px 4px;
+	}
+	#boxes .box p{
+		margin: 0 auto;
+		padding: 6px 8px 8px 12px;
 	}
 
 	#boxes .box {
 		margin: 20px auto;
 		width: 95%;
 		box-shadow: gray 2px 2px 2px 2px;
-		border-radius: 20px 20px 20px 20px;
+		border-radius: 20px;
 	}
 
 	#showcase {
