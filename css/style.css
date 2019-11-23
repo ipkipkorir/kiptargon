@@ -111,7 +111,7 @@ header #branding p {
 	color: #111;
 	position: relative;
 	font-size: 24px;
-	
+
 	/*Animation: images sliding from the background*/
 	overflow: hidden;
 	background-position: center center;
@@ -169,8 +169,7 @@ header #branding p {
 	position: absolute;
   	bottom: 0;
   	top: 0;
-  	background: rgb(0, 0, 0); 		/* Fallback color */
-  	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  	background: rgba(0, 0, 0, 0.3); /* Black background with 0.3 opacity */
   	color: #f1f1f1;
   	width: 100%;
   	padding: 20px;
