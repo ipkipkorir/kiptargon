@@ -101,17 +101,65 @@ header #branding p {
 - Image has transparent text(using color opacity)
 */
 #showcase {
+	margin: 0;
+	padding: 0;
 	width: 100%;
 	text-align: center;
-	background: url('../img/slide-5.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 360px;
+	min-height: 560px;
 	color: #111;
 	position: relative;
 	font-size: 24px;
-
+	
+	/*Animation: images sliding from the background*/
+	overflow: hidden;
+	background-position: center center;
+	background-visibility: hidden;
+	animation: slideBg 40s linear infinite;
+	animation-timing-function: ease-in-out;
+	background: url('../img/slide-5.jpg');
 }
+@keyframes slideBg {
+	0% {
+		background: url('../img/slider/pic1.jpg');
+		background-size: cover;
+	}
+	12.5% {
+		background: url('../img/slider/pic2.jpg');
+		background-size: cover;
+	}
+	25% {
+		background: url('../img/slider/pic3.jpg');
+		background-size: cover;
+	}
+	37.5% {
+		background: url('../img/slider/pic4.jpg');
+		background-size: cover;
+	}
+	50% {
+		background: url('../img/slider/pic5.jpg');
+		background-size: cover;
+	}
+	62.5% {
+		background: url('../img/slider/pic6.jpg');
+		background-size: cover;
+	}
+	75% {
+		background: url('../img/slider/pic7.jpg');
+		background-size: cover;
+	}
+	87.5% {
+		background: url('../img/slider/pic8.jpg');
+		background-size: cover;
+	}
+	100% {
+		background: url('../img/slider/pic5.jpg');
+		background-size: cover;
+	}
+}
+
+
 #showcase h3 {
 	line-height: 1.5; 
 	text-shadow: 2px 2px #111;
