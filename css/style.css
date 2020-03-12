@@ -84,11 +84,6 @@ header #branding p {
 	padding-bottom: 10px; 
 }
 
-/*
-*******SEARCH BUTTON*****
-*************************
-- Align to the right of the topnav bar
-*/
 
 /* 
 *******SHOWCASE*********
@@ -115,47 +110,66 @@ header #branding p {
 	/*Animation: images sliding from the background*/
 	overflow: hidden;
 	background-position: center center;
+	background-attachment: fixed;
 	background-visibility: hidden;
-	animation: slideBg 40s infinite;
+	animation: slideBg 100s infinite;
 	animation-timing-function: ease-in-out;
 	background: url('../img/slide-5.jpg');
 }
 @keyframes slideBg {
-	0% {
+	0%, 100% {
 		background: url('../img/slider/pic1.jpg');
 		background-size: cover;
+		background-position: center center;
+		
 	}
 	12.5% {
 		background: url('../img/slider/pic2.jpg');
 		background-size: cover;
+		background-position: center center;
+		
 	}
 	25% {
 		background: url('../img/slider/pic3.jpg');
 		background-size: cover;
+		background-position: center center;
+		
 	}
 	37.5% {
 		background: url('../img/slider/pic4.jpg');
 		background-size: cover;
+		background-position: center center;
+		
 	}
 	50% {
 		background: url('../img/slider/pic5.jpg');
 		background-size: cover;
+		background-position: center center;
+		
 	}
 	62.5% {
 		background: url('../img/slider/pic6.jpg');
 		background-size: cover;
+		background-position: center center;
+		
 	}
 	75% {
 		background: url('../img/slider/pic7.jpg');
 		background-size: cover;
+		background-position: center center;
+		
 	}
 	87.5% {
 		background: url('../img/slider/pic8.jpg');
 		background-size: cover;
+		background-position: center center;
+		
 	}
 	100% {
 		background: url('../img/slider/pic5.jpg');
 		background-size: cover;
+		background-position: center center;
+		
 	}
 }
 
@@ -181,7 +195,7 @@ header #branding p {
 	margin: 0 auto;
 }
 #boxes .container {
-	background: #fff;
+	
 	min-height: 550px;
 	margin-top: 8px;
 	margin-bottom: 0;
@@ -253,6 +267,7 @@ footer {
 
 
 /*ABOUT PAGE*/
+
 [contacts] h1{
 	font-size: 16px;
 	color: #000087;
@@ -267,14 +282,18 @@ footer {
 ******MAKE DESIGN RESPONSIVE*********
 *************************************
 */
-@media screen and (max-width: 768px) {
-	header #branding img, header #branding [slogan], #branding h1, #boxes .box {
+@media screen and (max-width: 800px) {
+	header #branding img, 
+	header #branding [slogan], 
+	#branding h1, 
+	#boxes .box {
 	    float: none;
 	    display: block;
 	    margin: 0 auto;
 	}
 
-	header #branding, #showcase {
+	header #branding,
+	#showcase {
 		line-height: 1.2;
 		font-size: 22px;
 		width: 100%;
@@ -318,5 +337,8 @@ footer {
 	#showcase {
 	 	width: 100%;
 	 	background-size: cover;
+	 	animation: none;
+	 	background: url('../img/slider/pic8.jpg') no-repeat;
+	 	background-position: center center;
   }
 }

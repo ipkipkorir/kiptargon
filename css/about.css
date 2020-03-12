@@ -1,0 +1,11 @@
+#boxes .content-box {
+	width: 90%;
+}
+
+#boxes .content-box h2,
+#boxes .content-box p ul > li {
+	padding-left: 20px;
+}
+#boxes .content-box p ul {
+	margin-left: 20px;
+}
