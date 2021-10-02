@@ -1,12 +1,16 @@
-body {
+/* GLOBAL */
+* {
+	box-sizing: border-box;
+	margin: 0;
 	padding: 0;
+}
+
+body {
 	font-size: 17px;
 	background: url('../img/bg.png') repeat;
 	line-height: 1.5;
 }
 
-/* GLOBAL */
-* {box-sizing: border-box;}
 
 .container {
 	width: 80%;
@@ -86,116 +90,97 @@ header #branding p {
 
 
 /* 
-*******SHOWCASE*********
-************************
-- Backgound has image:
-		- covers full width
-		- no repeat
-- Align text to center
-- Specified minimum height
-- Image has transparent text(using color opacity)
-*/
-#showcase {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	text-align: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 560px;
-	color: #111;
+*******SLIDESHOW*********
+************************/
+
+#banner {
 	position: relative;
-	font-size: 24px;
-
-	/*Animation: images sliding from the background*/
-	overflow: hidden;
-	background-position: center center;
-	background-attachment: fixed;
-	background-visibility: hidden;
-	animation: slideBg 100s infinite;
-	animation-timing-function: ease-in-out;
-	background: url('../img/slide-5.jpg');
-}
-@keyframes slideBg {
-	0%, 100% {
-		background: url('../img/slider/pic1.jpg');
-		background-size: cover;
-		background-position: center center;
-		
-	}
-	12.5% {
-		background: url('../img/slider/pic2.jpg');
-		background-size: cover;
-		background-position: center center;
-		
-	}
-	25% {
-		background: url('../img/slider/pic3.jpg');
-		background-size: cover;
-		background-position: center center;
-		
-	}
-	37.5% {
-		background: url('../img/slider/pic4.jpg');
-		background-size: cover;
-		background-position: center center;
-		
-	}
-	50% {
-		background: url('../img/slider/pic5.jpg');
-		background-size: cover;
-		background-position: center center;
-		
-	}
-	62.5% {
-		background: url('../img/slider/pic6.jpg');
-		background-size: cover;
-		background-position: center center;
-		
-	}
-	75% {
-		background: url('../img/slider/pic7.jpg');
-		background-size: cover;
-		background-position: center center;
-		
-	}
-	87.5% {
-		background: url('../img/slider/pic8.jpg');
-		background-size: cover;
-		background-position: center center;
-		
-	}
-	100% {
-		background: url('../img/slider/pic5.jpg');
-		background-size: cover;
-		background-position: center center;
-		
-	}
+	top: 0px;
+	width: 100%;
+	height: 100vh;
+	/*background-color: rgba(128,0,0,0.2);*/
 }
 
-
-#showcase h3 {
-	line-height: 1.5; 
-	text-shadow: 2px 2px #111;
+/******************
+Slide Show On Banner
+*******************/
+#banner .slideshow {
+	position: relative;
+	height: 100vh;
 }
-
-#showcase .container {
+#banner .slideshow-img {
 	position: absolute;
-  	bottom: 0;
-  	top: 0;
-  	background: rgba(0, 0, 0, 0.3); /* Black background with 0.3 opacity */
-  	color: #f1f1f1;
-  	width: 100%;
-  	padding: 20px;
+	top: -237px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
 }
 
+/*******************
+Banner text
+*******************/
+#banner .brand-text {
+	position: relative;
+	z-index: 1;
+}
+#banner .products-cat {
+	position: relative;
+	top: -650px;
+	font-size: 28px;
+	color: #fff;
+	font-family: sans-serif;
+}
+#banner .banner-header-text h1,
+#banner .banner-header-text p {
+	text-shadow: 4px 4px 4px #000;
+	font-weight: bold;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	line-height: 2.0;
+	padding: 22px;
+}
+#banner .banner-header-text p > span {
+	color: #d4d4d4;
+	font-family: Courier New;
+}
+.banner .banner-header-text h1 {
+	font-size: 48px;
+	color: #ffd700;
+}
+.banner .banner-header-text a {
+	border: 1px #444 solid;
+	border-radius: 8px;
+	background-color: rgba(0,0,0,0.3);
+	padding: 12px 8px;
+	box-shadow: 2px 4px 8px #111;
+	text-decoration: none;
+	color: #ffd700;
+	font-family: verdana, sans-serif;
+	text-transform: uppercase;
+}
+.banner .banner-header-text a:hover {
+	background-color: rgb(1,1,1);
+	color: #fff;
+}
 
-/*Boxes for displaying vision, mission and motto */
+/**********************
+Boxes for displaying 
+departments
+**************************/
 #boxes {
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 #boxes .container {
-	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	min-height: 550px;
 	margin-top: 8px;
 	margin-bottom: 0;
@@ -207,21 +192,36 @@ header #branding p {
 	min-height: 280px;
 	border-radius: 5px;
 	box-shadow: #ccc 4px 4px 4px 4px;
-	float: left;
 	background: #fff;
 }
-
-#boxes [core-values] {
-	padding-left: 30px;
+#boxes .box img {
+	width: 100%;
+	margin: 0 auto;
+	padding: 14px;
 }
 
-.box h1, .box p, .box ul {
+.box h1, .box p, .box ul, .box ol {
 	margin: 0 auto;
 	padding: 16px 20px;
 	text-align: left;
-
 }
-
+.box ul > li, .box ol > li {
+	list-style-position: inside;
+	padding: 0 18px;
+}
+#boxes .department {
+	width: 85%;
+}
+#boxes .department h1 {
+	color: orange;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+#boxes .department h2 {
+	padding: 2px 18px;
+	font-size: 17px;
+	color: #333;
+}
 /*Contacts*/
 .contacts p span {
 	font-weight: bold;
@@ -239,13 +239,42 @@ header #branding p {
 }
 
 #bottom {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	min-height: 300px;
 	background: #ddd;
+	background-color: #333;
+	color: #fff;
 }
-
+#bottom div a {
+	text-decoration: none;
+	color: #fff;
+	padding: 2px 8px;
+}
+#bottom div a:hover {
+	background-color: #111;
+	text-decoration: underline;
+}
+#bottom div {
+	width: 24%;
+	margin: 10px auto;
+	padding: 8px 12px;
+	text-align: left;
+	background-color: #444;
+}
+#bottom div .bottomnav {
+	background-color: none;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	width: 100%;
+	line-height: 2.5;
+}
 footer {
-	min-height: 250px;
-	background: #ccc;
+	min-height: 150px;
+	background: #111;
+	color: #f4f4f4;
 }
 
 #bottom .socialmedia {
@@ -255,7 +284,6 @@ footer {
 #bottom img {
 	width: 50px;
 }
-
 #bottom img:hover {
 	width: 55px;
 }
@@ -292,8 +320,7 @@ footer {
 	    margin: 0 auto;
 	}
 
-	header #branding,
-	#showcase {
+	header #branding {
 		line-height: 1.2;
 		font-size: 22px;
 		width: 100%;
@@ -305,17 +332,39 @@ footer {
 		font-size: 35px;
 	}
 
-	#showcase h1 {
-		margin: 0 auto;
-		padding: 0 2px;
-		font-size: 25px;
+	/******************
+	slide show images
+	***************/
+	#banner .slideshow-img {
+	position: absolute;
+	top: -210px;
+}
+
+
+	/***********************
+	text on banner
+	************************/
+	#banner .banner-header-text h1,
+	#banner .banner-header-text p {
+		width: 70%;
+	}
+	.banner .banner-header-text h1 {
+		font-size: 28px;
+	}
+	.banner .banner-header-text a {
+		
+		padding: 12px 8px;
+	}
+	#banner .products-cat {
+		font-size: 18px;
+
 	}
 
 
+	/*************************/
 	#boxes .container {
 		background: none;
 	}
-
 	#boxes .box h1 {
 		text-align: center;
 		color: #646499;
@@ -326,7 +375,6 @@ footer {
 		margin: 0 auto;
 		padding: 6px 8px 8px 12px;
 	}
-
 	#boxes .box {
 		margin: 20px auto;
 		width: 95%;
@@ -334,11 +382,11 @@ footer {
 		border-radius: 20px;
 	}
 
-	#showcase {
-	 	width: 100%;
-	 	background-size: cover;
-	 	animation: none;
-	 	background: url('../img/slider/pic8.jpg') no-repeat;
-	 	background-position: center center;
-  }
+	/*******************/
+	#bottom {
+		flex-direction: column;
+	}
+	#bottom .bottom-box {
+		width: 90%;
+	}
 }

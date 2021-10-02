@@ -1,25 +1,13 @@
+#boxes .container {
+	width: 80%;
+}
 #boxes .container img {
 	width: 60px;
 }
-
+#boxes .container .box {
+	width: 100%;
+}
 [contacts] span {
 	font-weight: bold;
 }
-/*SEARCH within the website*/
-/*
-.search-container form {
-	display: inline;
-	float: right;
-}
 
-.search-container input {
-	height: 35px;
-}
-.search-container button {
-	width: 45px;
-	height: 35px;
-}
-*/
-@media screen and (max-width: 768px) {
-
- }
